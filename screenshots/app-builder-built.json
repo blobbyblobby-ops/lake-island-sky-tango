@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Lotcut",
+      "hasCanvas": false,
+      "bodyTextLen": 1069,
+      "bodyTextHash": "527e949a42035baf19ee48c556bec0ff7644778f059f363d353c8020b9ee1a66",
+      "bodyTextPrefix": "Lotcut One video. Every listing. Likely lot — Film the pile once",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Lotcut",
+      "hasCanvas": false,
+      "bodyTextLen": 930,
+      "bodyTextHash": "2b194df7113a1657f6f4970929a0044a9447368ff22e6355c12a0e006517cb9a",
+      "bodyTextPrefix": "Lotcut One video. Every listing. Likely lot — Film the pile once",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

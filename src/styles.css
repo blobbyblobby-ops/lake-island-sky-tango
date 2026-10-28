@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, serif;
+  --color-bg: #14160f;
+  --color-surface: #1e2218;
+  --color-raised: #282d22;
+  --color-fg: #f3efe4;
+  --color-muted: #9c9688;
+  --color-primary: #d7ef4c;
+  --color-ink: #17190f;
+  --color-line: #34392c;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    line-height: 1.15;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  input,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+.detail-scroll {
+  max-height: none;
+}
+
+@media (min-width: 64rem) {
+  .detail-scroll {
+    max-height: calc(100dvh - 5.5rem);
+    overflow-y: auto;
+  }
+}
+
+.film-edge {
+  background-color: var(--color-ink);
+  background-image:
+    radial-gradient(circle at 10px 9px, var(--color-bg) 3px, transparent 3.5px),
+    radial-gradient(circle at 10px calc(100% - 9px), var(--color-bg) 3px, transparent 3.5px);
+  background-size: 20px 100%;
+  background-repeat: repeat-x;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
